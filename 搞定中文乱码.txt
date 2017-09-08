@@ -1,0 +1,7 @@
+git中文乱码解决
+1.etc\inputrc文件中增加以下内容：
+set output-meta on set convert-meta off
+说明：使得在 Git Bash 中可以正常输入中文，比如中文的 commit log。
+2.通过将Git配置变量 core.quotepath 设置为false，就可以解决中文文件名称在这些Git命令输出中的显示问题
+git config --global core.quotepath false
+测试行无用11
